@@ -385,10 +385,10 @@ prefix argument."
 (global-set-key (kbd "C-z") 'ido-switch-buffer)
 (global-set-key (kbd "C-,") 'ace-jump-char-mode)
 
-(global-set-key (kbd "<left>") 'windmove-left)
-(global-set-key (kbd "<right>") 'windmove-right)
-(global-set-key (kbd "<up>") 'windmove-up)
-(global-set-key (kbd "<down>") 'windmove-down)
+; (global-set-key (kbd "<left>") 'windmove-left)
+; (global-set-key (kbd "<right>") 'windmove-right)
+; (global-set-key (kbd "<up>") 'windmove-up)
+; (global-set-key (kbd "<down>") 'windmove-down)
 
 (global-set-key (kbd "C-w") 'clipboard-kill-region)
 (global-set-key (kbd "M-w") 'clipboard-kill-ring-save)
@@ -413,7 +413,7 @@ prefix argument."
 (global-set-key (kbd "C-<") 'beginning-of-buffer)
 (global-set-key (kbd "C-!") 'eval-defun)
 
-(global-set-key (kbd "C-x C-c") nil)
+; (global-set-key (kbd "C-x C-c") nil)
 
 
 ;; Mode-specific keybindings
@@ -550,8 +550,8 @@ prefix argument."
 
 ;; Faces
 
-(custom-set-faces
- '(default ((t (:inherit nil :height 140 :width normal :family "Ubuntu Mono")))))
+; (custom-set-faces
+;  '(default ((t (:inherit nil :height 140 :width normal :family "Ubuntu Mono")))))
 
 (defface esk-paren-face
   '((((class color) (background dark))

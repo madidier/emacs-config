@@ -13,6 +13,7 @@
     god-mode
     paredit
     haskell-mode
+    company
     smex
     magit
     goto-last-change
@@ -44,7 +45,10 @@
 (defvar custom-load-paths
   '("structured-haskell-mode/elisp"
     "hindent/elisp"
-    "git-modes")
+    "git-modes"
+    "company-mode"
+    "company-ghc"
+    "ghc-mod")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 
@@ -57,7 +61,8 @@
     "lisp"
     "w3m"
     "markdown"
-    "org")
+    "org"
+    "company")
   "Configuration files that follow the config/foo.el file path
   format.")
 
@@ -99,8 +104,8 @@
 ;; Mode initializations
 
 (smex-initialize)
-(sunburn)
-(god-mode)
+(zenburn)
+; (god-mode)
 (goto-last-point-mode)
 (turn-on-haskell-simple-indent)
 (load "haskell-mode-autoloads.el")
