@@ -1,5 +1,9 @@
+This is a fork of [chrisdone](https://github.com/chrisdone)'s emacs
+config which I'm using as a basis for my own. The documentation below
+might not be up to date, so feel free to let me know if things do not
+go according to plan.
+
 Note: For a basic Haskell + Emacs setup with no other specific config, see
-my other
 [emacs-haskell-config](https://github.com/chrisdone/emacs-haskell-config)
 repository.
 
@@ -20,12 +24,6 @@ Optionally, for browsing haddocks inside Emacs:
 
     $ sudo apt-get install w3m
 
-### I'm just here to see your Haskell config
-
-Then you want to look inside
-[config/haskell.el](https://github.com/chrisdone/chrisdone-emacs/blob/master/config/haskell.el)
-and steal anything that looks interesting.
-
 ### Use without affecting existing Emacs configuration
 
 This is perfect for the “just looking” use-case.
@@ -36,7 +34,7 @@ This is perfect for the “just looking” use-case.
 
 Put only this in your `.emacs`
 
-    (load "/path-to/chrisdone-emacs/init.el")
+    (load "/path-to/emacs-config/init.el")
 
 and run Emacs as normal.
 
@@ -44,27 +42,3 @@ and run Emacs as normal.
 
 Check out this project or symlink it as `~/.emacs.d/` and then run
 Emacs as normal.
-
-### Weird stuff you might want to disable
-
-You might want to comment out the following things in [init.el](https://github.com/chrisdone/chrisdone-emacs/blob/master/init.el).
-
-God-mode is a modal input mode for Emacs like Vim:
-
-    (god-mode)
-
-If you prefer a dark terminal, comment out this:
-
-    (sunburn)
-
-### My software versions
-
-    $ emacs --version
-    GNU Emacs 24.3.1
-    Copyright (C) 2013 Free Software Foundation, Inc.
-    GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-    You may redistribute copies of Emacs
-    under the terms of the GNU General Public License.
-    For more information about these matters, see the file named COPYING.
-    $ ghc --version
-    The Glorious Glasgow Haskell Compilation System, version 7.6.2
